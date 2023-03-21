@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-21 08:43:18 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtQ0pCR0oyVTk7MjAyMy0wMi0yMTswNjo0NDowNSBQTTsyNjQ0"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtQ0pCR0oyVTk7MjAyMy0wMi0yMTswODo0MzoxOCBQTTs1OzI3NjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bil1, bil2, bil3, terbesar" type="Integer" array="False" size=""/>
+            <input variable="bil1"/>
+            <input variable="bil2"/>
+            <input variable="bil3"/>
+            <if expression="bil1&gt;bil2&amp;&amp;bil1&gt;bil3">
+                <then>
+                    <assign variable="terbesar" expression="bil1"/>
+                </then>
+                <else>
+                    <if expression="bil2&gt;bil3">
+                        <then>
+                            <assign variable="terbesar" expression="bil2"/>
+                        </then>
+                        <else>
+                            <assign variable="terbesar" expression="bil3"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;bilangan terbesar adalah &quot;&amp; terbesar" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
